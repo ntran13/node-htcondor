@@ -157,7 +157,7 @@ exports.submit = function(submit_options, config) {
             }
 
             //submit!
-            condor_submit = spawn('condor_submit', ['-verbose', submit.path]);//, {cwd: __dirname});
+            condor_submit = spawn('condor_submit', [submit.path]);//, {cwd: __dirname});
 
             //load event
             var stdout = "";
